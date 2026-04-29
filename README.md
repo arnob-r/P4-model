@@ -11,23 +11,25 @@ The `data/` folder contains the empirical tripartite network used in the study. 
 - `Sinohara_tripartite_adjacency_A.csv`: combined tripartite network data.
 - `Contrasting effects of land‐use changes on herbivory.pdf`: reference paper for the empirical network dataset.
 
-These datasets define the ecological interaction structure among pollinators, plants, and pests.
+These datasets define the ecological interaction structure among pollinators, plants, and pests. Two adjacency matrices are needed to run the main simulation codes provided in the respective folders.
+
 
 ## Codes
 
 The repository contains separate codes for generating the main numerical results:
 
 - `fig_2b/`: computes pollinator extinction-to-persistence transitions under varying IPM adoption \(x_u\) and policy strength \(f\).
-- `fig_3a/`: computes the basin of attraction for the focal pollinator species \(A_{18}\).
+- `fig_3a/`: computes the basin of attraction for the highest degree pollinator species \(A_{18}\).
 - `fig_3b_c/`: computes basin stability curves as management parameters change.
-- `fig_4/`: analyzes how mutualistic strength \(\gamma_0\) and antagonistic strength \(\xi_0\) affect recovery thresholds.
+- `fig_4/`: capturing the transition points under the mutualistic strength \(\gamma_0\) and antagonistic strength \(\xi_0\) parameter space.
 - `timeseries.py`: generates representative time-series plots for pollinator persistence and extinction dynamics.
 
 ## What to Do with the Codes
 
 1. Use the files in `data/` as input ecological networks.
-2. Run the Fortran files to generate numerical simulation outputs.
-3. Run the Python scripts to visualize the outputs and reproduce the manuscript figures.
-4. Modify \(x_u\), \(f\), \(\gamma_0\), \(\xi_0\), and initial conditions to test how pesticide management and ecological interactions affect pollinator recovery.
+2. Run the Fortran files and Python files to generate numerical simulation outputs. The parameter values, initial conditions should be adjusted, the code should be simulated, and the output datasets should be renamed accordingly to reproduce the figures.
+3. 
+4. Run the Python scripts to visualize the outputs and reproduce the manuscript figures.
+5. Modify \(x_u\), \(f\), \(\gamma_0\), \(\xi_0\), and initial conditions to test how pesticide management and ecological interactions affect pollinator recovery.
 
 The codes can be used to reproduce the main figures, explore extinction–persistence transitions, compute basin stability, and study how policy regulation and IPM adoption reshape pollinator recovery in tripartite ecological networks.
