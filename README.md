@@ -1,4 +1,4 @@
-# P4 Model Codes and Datasets
+# P4 Model Datasets and Codes
 
 This repository contains the codes and datasets used to simulate the Pollinator–Plant–Pest–Pesticide (P4) model. The model studies how pesticide regulation and farmer-level Integrated Pest Management (IPM) adoption affect pollinator recovery in a tripartite ecological network.
 
