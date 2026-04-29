@@ -28,7 +28,6 @@ The repository contains separate codes for generating the main numerical results
 
 1. Use the files in `data/` as input ecological networks.
 2. Run the Fortran files and Python files to generate numerical simulation outputs. The parameter values, initial conditions should be adjusted, the code should be simulated, and the output datasets should be renamed accordingly to reproduce the figures.
-3. 
 4. Run the Python scripts to visualize the outputs and reproduce the manuscript figures.
 5. Modify \(x_u\), \(f\), \(\gamma_0\), \(\xi_0\), and initial conditions to test how pesticide management and ecological interactions affect pollinator recovery.
 
